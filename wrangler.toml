@@ -1,0 +1,13 @@
+name = "vibepairing"
+compatibility_date = "2025-08-13"
+
+[site]
+bucket = "./dist"
+
+[[routes]]
+pattern = "vibepairing.com/*"
+zone_name = "vibepairing.com"
+
+[[routes]]
+pattern = "www.vibepairing.com/*"
+zone_name = "vibepairing.com"

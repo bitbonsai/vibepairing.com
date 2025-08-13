@@ -1,0 +1,655 @@
+---
+import '../styles/global.css';
+import Background from '../components/Background.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="theme-color" content="#252936" />
+		
+		<!-- Primary Meta Tags -->
+		<title>Vibepairing — The Evolution of AI Pair Programming</title>
+		<meta name="title" content="Vibepairing — The Evolution of AI Pair Programming" />
+		<meta name="description" content="Evolve from vibecoding to production code. Stop auto-accepting AI suggestions and start understanding what you're shipping. It's co-pilot, not autopilot." />
+		<meta name="keywords" content="AI programming, code review, vibepairing, vibecoding, AI pair programming, code quality, production code" />
+		<meta name="author" content="@bitbonsai" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://vibepairing.com/" />
+		<meta property="og:title" content="Vibepairing — The Evolution of AI Pair Programming" />
+		<meta property="og:description" content="Evolve from vibecoding to production code. Stop auto-accepting AI suggestions and start understanding what you're shipping." />
+		<meta property="og:image" content="https://vibepairing.com/og-image.png" />
+		<meta property="og:site_name" content="Vibepairing" />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://vibepairing.com/" />
+		<meta property="twitter:title" content="Vibepairing — The Evolution of AI Pair Programming" />
+		<meta property="twitter:description" content="Evolve from vibecoding to production code. Stop auto-accepting AI suggestions and start understanding what you're shipping." />
+		<meta property="twitter:image" content="https://vibepairing.com/og-image.png" />
+		<meta property="twitter:creator" content="@bitbonsai" />
+	</head>
+	<body>
+		<Background />
+		<main>
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="container">
+					<h1 class="fade-in">
+						vibepairing
+					</h1>
+					<p class="subtitle fade-in-delay-1">
+						Evolve from vibecoding to production code
+					</p>
+				</div>
+			</section>
+
+			<!-- Manifesto Section -->
+			<section class="manifesto">
+				<div class="container">
+					<h2 class="section-title fade-in-delay-2">The Manifesto</h2>
+					
+					<div class="manifesto-panel">
+						<div class="principles">
+							<article class="principle slide-left">
+							<h3>
+								<span class="highlight">Reading the diff</span> 
+								<span class="over">over</span> 
+								<span class="ending">blind accepts</span>
+							</h3>
+							<p>
+								Auto-accepting feels fast, but you're just accumulating debt. 
+								Actually look at what the AI wrote before you commit it.
+							</p>
+						</article>
+
+						<article class="principle slide-left-delay-1">
+							<h3>
+								<span class="highlight">Actually understanding</span> 
+								<span class="over">over</span> 
+								<span class="ending">just shipping</span>
+							</h3>
+							<p>
+								That code you don't understand today? Good luck debugging it at 2am. 
+								Know what you're putting in your codebase.
+							</p>
+						</article>
+
+						<article class="principle slide-left-delay-2">
+							<h3>
+								<span class="highlight">You're still the dev</span> 
+								<span class="over">over</span> 
+								<span class="ending">AI does everything</span>
+							</h3>
+							<p>
+								AI writes code, you make decisions. It's co-pilot, not autopilot. 
+								Your brain is still required.
+							</p>
+						</article>
+
+						<article class="principle slide-left-delay-3">
+							<h3>
+								<span class="highlight">Code that lasts</span> 
+								<span class="over">over</span> 
+								<span class="ending">code that works</span>
+							</h3>
+							<p>
+								"It works" is step one. "It's maintainable" is what separates 
+								prototypes from production.
+							</p>
+						</article>
+
+						<article class="principle slide-left-delay-4">
+							<h3>
+								<span class="highlight">Future you</span> 
+								<span class="over">over</span> 
+								<span class="ending">current you</span>
+							</h3>
+							<p>
+								That "temporary" hack? It's going to be there for years. 
+								Write code like future you is going to review it.
+							</p>
+						</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Truth Section -->
+			<section class="truth">
+				<div class="container">
+					<div class="truth-content card fade-in">
+						<h2>Look, vibecoding is great</h2>
+						
+						<p>
+							<strong>It feels like magic.</strong> Code appears at the speed of thought. 
+							Auto-accept and boom—your feature is done. It's addictive.
+						</p>
+						
+						<p>
+							For prototypes? Hackathons? Exploring weird ideas at 3am? 
+              <b><em>Vibecode away.</em></b>
+						</p>
+						
+						<p>
+							But then you ship that prototype. Users touch it. It breaks in ways you never expected 
+							because you never actually understood what you built. <strong>Production is different.</strong>
+						</p>
+
+						<blockquote>
+							The code you don't understand today is the bug you can't fix tomorrow.
+						</blockquote>
+						
+						<p>
+            <b>So here's the deal:</b> same AI, same speed, but you actually <b>read</b> the code first. 
+							<em>That's vibepairing.</em> Revolutionary concept, I know. 😅
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- How It Works -->
+			<section class="how-it-works">
+				<div class="container">
+					<h2 class="section-title">How Vibepairing Works</h2>
+					
+					<div class="steps">
+						<div class="step fade-in">
+							<h3>AI writes code</h3>
+              <p><b>Same as vibecoding</b>. AI generates whatever you asked for.</p>
+						</div>
+						
+						<div class="step fade-in-delay-1">
+							<h3>You read & think</h3>
+              <p><b>Wild idea:</b> look at the diff before accepting. What did it do? Does this make sense? Will future you understand this?</p>
+						</div>
+						
+						<div class="step fade-in-delay-2">
+							<h3>Then you decide</h3>
+              <p><b>Accept, tweak, or reject.</b> You're the human. Act like it.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer>
+				<div class="container">
+					<div class="footer-content">
+						<div class="footer-left">
+							<div>© 2025 vibepairing.com — <span class="footer-tagline">Thinking how can we build better with AI</span></div>
+							<div class="footer-credits">
+								Colors by <a href="https://catppuccin.com" target="_blank" rel="noopener" class="underline-hover">Catppuccin</a> • 
+                Made with <span class="heart">❤️</span> by <a href="https://github.com/bitbonsai" target="_blank" rel="noopener" class="underline-hover">@bitbonsai</a> <span style="opacity: .5">(who loves a dotted background)</span>
+							</div>
+						</div>
+						<div class="footer-links">
+							<a href="https://github.com/mirowolff/vibepairing.com" target="_blank" rel="noopener" class="underline-hover">
+								GitHub →
+							</a>
+							<a href="https://etsd.tech/posts/rtfc/" target="_blank" rel="noopener" class="underline-hover">
+								Read: "RTFC" →
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
+
+<style>
+	/* Layout specific styles */
+	main {
+		min-height: 100vh;
+	}
+
+	/* Hero */
+	.hero {
+		padding: 6rem 0 2rem;
+		text-align: center;
+	}
+
+	.hero .container {
+		max-width: var(--max-width);
+	}
+
+
+	/* H1 bit2-style */
+	h1 {
+		font-size: clamp(5rem, 15vw, 10rem);
+		font-weight: 900;
+		margin-bottom: 1rem;
+		letter-spacing: -0.05em3;
+    font-family: sytem-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+		background: linear-gradient(135deg, 
+			var(--accent-lavender) 0%,
+			var(--accent-pink) 100%
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-transform: lowercase;
+		filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+	}
+
+	@keyframes gradientFlow {
+		0%, 100% { 
+			background-position: 0% 50%; 
+		}
+		25% { 
+			background-position: 100% 0%; 
+		}
+		50% { 
+			background-position: 100% 100%; 
+		}
+		75% { 
+			background-position: 0% 100%; 
+		}
+	}
+
+	.subtitle {
+		font-size: clamp(1.25rem, 3vw, 1.75rem);
+		color: var(--text-secondary);
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	/* Manifesto */
+	.manifesto {
+		padding: 2rem 0 4rem;
+	}
+
+	.section-title {
+		text-align: center;
+		margin-bottom: 3rem;
+		color: var(--accent-lavender);
+	}
+
+	.manifesto-panel {
+		background: rgba(255, 255, 255, 0.08);
+		backdrop-filter: blur(40px);
+		-webkit-backdrop-filter: blur(40px);
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		border-radius: 24px;
+		padding: 3rem;
+		box-shadow: 
+			0 4px 16px rgba(0, 0, 0, 0.15),
+			inset 0 1px 0 rgba(255, 255, 255, 0.2),
+			inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+			0 0 0 1px rgba(255, 255, 255, 0.02);
+		transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	}
+
+	.manifesto-panel:hover {
+		background: rgba(255, 255, 255, 0.12);
+		border-color: rgba(114, 135, 253, 0.25);
+		backdrop-filter: blur(50px);
+		-webkit-backdrop-filter: blur(50px);
+		box-shadow: 
+			0 8px 24px rgba(0, 0, 0, 0.2),
+			inset 0 1px 0 rgba(255, 255, 255, 0.3),
+			inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+			0 0 0 1px rgba(114, 135, 253, 0.1);
+		transform: translateY(-2px);
+	}
+
+	.principles {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.principle {
+		position: relative;
+	}
+
+	.principle h3 {
+		font-size: 1.75rem;
+    margin-bottom: 1rem;
+		line-height: 1.3;
+	}
+
+	.principle p {
+		line-height: 1.7;
+	}
+
+	.principle .highlight {
+		color: var(--text-primary);
+		font-weight: 900;
+		background: rgba(0, 0, 0, 0.15);
+		padding: 0.1em 0.25em;
+		border-radius: 4px;
+		box-decoration-break: clone;
+		-webkit-box-decoration-break: clone;
+	}
+
+	.principle .over {
+		color: var(--text-muted);
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	.principle .ending {
+		color: var(--accent-pink);
+	}
+
+	/* Truth Section */
+	.truth {
+		padding: 4rem 0;
+	}
+
+	.truth-content {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		background: rgba(40, 44, 52, 0.8);
+		backdrop-filter: blur(15px);
+		-webkit-backdrop-filter: blur(15px);
+		border: 1px solid rgba(62, 68, 81, 0.7);
+		border-radius: 12px;
+		padding: 2rem;
+		transition: all 0.3s ease;
+	}
+
+	.truth-content:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+		background: rgba(40, 44, 52, 0.9);
+	}
+
+	.truth-content h2 {
+		color: var(--accent-lavender);
+		margin-bottom: 2rem;
+	}
+
+	.truth-content blockquote {
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-style: italic;
+		font-size: 1.25rem;
+		line-height: 1.6;
+		text-align: center;
+		color: var(--accent-lavender);
+		background: rgba(114, 135, 253, 0.05);
+		border: none;
+		border-left: 3px solid var(--accent-lavender);
+		padding: 2rem;
+		margin: 3rem 0;
+		border-radius: 8px;
+		position: relative;
+	}
+
+	.truth-content blockquote::before {
+		content: '';
+		position: absolute;
+		top: -1rem;
+		left: 0.5rem;
+		width: 34px;
+		height: 31px;
+		background-image: url("data:image/svg+xml,%3Csvg width='34' height='31' viewBox='0 0 34 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24.0996 15.7C24.0996 16.7666 24.7329 17.3333 25.9996 17.4L27.9996 17.5C29.3329 17.5666 30.5329 18.1666 31.5996 19.3C32.5996 20.5 33.0996 21.9 33.0996 23.5C33.0996 25.3666 32.4329 26.9333 31.0996 28.2C29.7663 29.4666 28.0996 30.1 26.0996 30.1C23.8329 30.1 21.9663 29.1666 20.4996 27.3C18.9663 25.5 18.1996 23.1666 18.1996 20.3C18.1996 14.8333 20.2663 9.36664 24.3996 3.89998C25.9329 1.83331 27.2663 0.799976 28.3996 0.799976C29.7329 0.799976 30.3996 1.46664 30.3996 2.79998C30.3996 3.33331 30.0329 4.06664 29.2996 4.99998C27.9663 6.66664 26.7663 8.59998 25.6996 10.8C24.6329 13 24.0996 14.6333 24.0996 15.7ZM5.99961 15.7C5.99961 16.7666 6.59961 17.3333 7.79961 17.4L9.79961 17.5C11.1996 17.5666 12.4329 18.1666 13.4996 19.3C14.4996 20.5 14.9996 21.9 14.9996 23.5C14.9996 25.3666 14.3329 26.9333 12.9996 28.2C11.6663 29.4666 9.99961 30.1 7.99961 30.1C5.66627 30.1 3.76628 29.1666 2.29961 27.3C0.766277 25.5 -0.000392914 23.1666 -0.000392914 20.3C-0.000392914 14.9 2.09961 9.43331 6.29961 3.89998C7.89961 1.83331 9.23294 0.799976 10.2996 0.799976C11.5663 0.799976 12.1996 1.46664 12.1996 2.79998C12.1996 3.33331 11.8329 4.06664 11.0996 4.99998C9.83294 6.66664 8.66628 8.59998 7.59961 10.8C6.53294 13 5.99961 14.6333 5.99961 15.7Z' fill='%237287fd' fill-opacity='0.4'/%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.truth-content blockquote::after {
+		content: '';
+		position: absolute;
+		bottom: -1rem;
+		right: 0.5rem;
+		width: 34px;
+		height: 31px;
+		background-image: url("data:image/svg+xml,%3Csvg width='34' height='31' viewBox='0 0 34 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 15.2C9 14.1333 8.36667 13.5667 7.1 13.5L5.1 13.4C3.76667 13.3333 2.56667 12.7333 1.5 11.6C0.5 10.4 0 8.99999 0 7.39999C0 5.53332 0.666667 3.96665 2 2.69999C3.33333 1.43332 5 0.799988 7 0.799988C9.26667 0.799988 11.1333 1.73332 12.6 3.59999C14.1333 5.39999 14.9 7.73332 14.9 10.6C14.9 16.0667 12.8333 21.5333 8.7 27C7.16667 29.0667 5.83333 30.1 4.7 30.1C3.36667 30.1 2.7 29.4333 2.7 28.1C2.7 27.5667 3.06667 26.8333 3.8 25.9C5.13333 24.2333 6.33333 22.3 7.4 20.1C8.46667 17.9 9 16.2667 9 15.2ZM27.1 15.2C27.1 14.1333 26.5 13.5667 25.3 13.5L23.3 13.4C21.9 13.3333 20.6667 12.7333 19.6 11.6C18.6 10.4 18.1 8.99999 18.1 7.39999C18.1 5.53332 18.7667 3.96665 20.1 2.69999C21.4333 1.43332 23.1 0.799988 25.1 0.799988C27.4333 0.799988 29.3333 1.73332 30.8 3.59999C32.3333 5.39999 33.1 7.73332 33.1 10.6C33.1 16 31 21.4667 26.8 27C25.2 29.0667 23.8667 30.1 22.8 30.1C21.5333 30.1 20.9 29.4333 20.9 28.1C20.9 27.5667 21.2667 26.8333 22 25.9C23.2667 24.2333 24.4333 22.3 25.5 20.1C26.5667 17.9 27.1 16.2667 27.1 15.2Z' fill='%237287fd' fill-opacity='0.4'/%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	/* How It Works */
+	.how-it-works {
+		padding: 4rem 0;
+	}
+
+	.steps {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 4rem;
+		margin-top: 3rem;
+		max-width: var(--max-width);
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+
+	.step {
+		flex: 1;
+		position: relative;
+		max-width: 280px;
+		padding-top: 4rem;
+	}
+	
+	.step h3 {
+		text-align: center;
+	}
+	
+	.step p {
+		text-align: justify;
+		text-justify: inter-word;
+		line-height: 1.7;
+		letter-spacing: 0.01em;
+		hyphens: auto;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	/* Numbered circles on each step */
+	.step::before {
+		content: '2';
+		position: absolute;
+		top: 0.5rem;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 40px;
+		height: 40px;
+		background: var(--accent-lavender);
+		border-radius: 50%;
+		z-index: 2;
+		color: white;
+		font-weight: 900;
+		font-size: 1.125rem;
+		display: grid;
+		place-items: center;
+		transition: all 0.3s ease;
+		cursor: pointer;
+	}
+
+	.step:hover::before {
+		transform: translateX(-50%) scale(1.1);
+		box-shadow: 0 0 12px rgba(114, 135, 253, 0.3);
+		background: var(--accent-pink);
+	}
+
+	/* Different numbers for each step */
+	.step:first-child::before {
+		content: '1';
+	}
+
+	.step:last-child::before {
+		content: '3';
+	}
+
+	.step h3 {
+		color: var(--accent-pink);
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+		margin-top: 0;
+	}
+
+	/* Footer */
+	footer {
+		padding: 1rem 0;
+    margin-top: 2rem;
+	}
+
+	.footer-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	.footer-left {
+		color: var(--text-muted);
+		font-size: 0.95rem;
+	}
+
+	.footer-credits {
+		margin-top: 0.5rem;
+		font-size: 0.85rem;
+		opacity: 0.8;
+	}
+
+	.heart {
+		color: #ff6b6b;
+		animation: heartbeat 2s ease-in-out infinite;
+		display: inline-block;
+	}
+
+	@keyframes heartbeat {
+		0%, 100% {
+			transform: scale(1);
+		}
+		14% {
+			transform: scale(1.2);
+		}
+		28% {
+			transform: scale(1);
+		}
+		42% {
+			transform: scale(1.2);
+		}
+		70% {
+			transform: scale(1);
+		}
+	}
+
+	.footer-links {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	.footer-links a {
+		font-size: 0.95rem;
+	}
+
+	/* Mobile responsive */
+	@media (max-width: 768px) {
+		.hero {
+			padding: 2rem 0 1rem;
+		}
+
+		.subtitle {
+			font-size: 1rem;
+			margin-bottom: 0;
+		}
+
+		.manifesto {
+			padding: 2rem 0;
+		}
+
+		.manifesto-panel {
+			padding: 2rem;
+			margin: 0;
+			border-radius: 16px;
+		}
+
+		.principle h3 {
+			font-size: 1.3rem;
+			line-height: 1.2;
+			margin-bottom: 0.75rem;
+		}
+
+		.principle p {
+			font-size: 0.95rem;
+			line-height: 1.5;
+		}
+
+		.principles {
+			gap: 2.5rem;
+		}
+
+		.how-it-works {
+			padding: 2rem 0;
+		}
+
+		.steps {
+			flex-direction: column;
+			align-items: center;
+			gap: 3rem;
+			margin-top: 2rem;
+		}
+
+		/* Remove timeline line on mobile */
+		.steps::before {
+			display: none;
+		}
+
+		.step {
+			padding-top: 0;
+			text-align: center;
+			max-width: 100%;
+		}
+
+		.step::before {
+			position: relative;
+			top: 0;
+			left: auto;
+			transform: none;
+			margin: 0 auto 1.5rem auto;
+			display: grid;
+			place-items: center;
+		}
+
+		.step h3 {
+			font-size: 1.25rem;
+			margin-bottom: 0.75rem;
+		}
+
+		.step p {
+			font-size: 0.95rem;
+			line-height: 1.5;
+		}
+
+		.footer-content {
+			flex-direction: column;
+			text-align: center;
+			gap: 1.5rem;
+		}
+
+		.truth-content {
+			margin: 0;
+			border-radius: 8px;
+			padding: 1.5rem;
+		}
+
+		.truth {
+			padding: 2rem 0;
+		}
+
+		.footer-tagline::before {
+			content: "\A";
+			white-space: pre;
+		}
+
+		.section-title {
+			margin-bottom: 1rem;
+		}
+	}
+</style>
