@@ -43,11 +43,13 @@
         type="translate"
         values="0,0; 200,100; 300,-50; 100,-150; -100,50; 0,0"
         dur="30s"
+        begin="9s"
         repeatCount="indefinite"/>
       <animate
         attributeName="r"
         values="350; 450; 400; 500; 350"
         dur="25s"
+        begin="9s"
         repeatCount="indefinite"/>
     </circle>
     
@@ -58,11 +60,13 @@
         type="translate"
         values="0,0; -150,120; -250,50; -100,-80; 80,150; 0,0"
         dur="35s"
+        begin="9s"
         repeatCount="indefinite"/>
       <animate
         attributeName="r"
         values="400; 500; 450; 550; 400"
         dur="28s"
+        begin="9s"
         repeatCount="indefinite"/>
     </circle>
     
@@ -73,11 +77,13 @@
         type="translate"
         values="0,0; -120,-80; -200,40; -80,120; 40,-40; 0,0"
         dur="32s"
+        begin="9s"
         repeatCount="indefinite"/>
       <animate
         attributeName="r"
         values="300; 380; 340; 420; 300"
         dur="22s"
+        begin="9s"
         repeatCount="indefinite"/>
     </circle>
     
@@ -88,11 +94,13 @@
         type="translate"
         values="0,0; 180,60; 250,-40; 120,-120; -60,80; 0,0"
         dur="38s"
+        begin="9s"
         repeatCount="indefinite"/>
       <animate
         attributeName="r"
         values="320; 400; 360; 440; 320"
         dur="26s"
+        begin="9s"
         repeatCount="indefinite"/>
     </circle>
     
@@ -103,11 +111,13 @@
         type="translate"
         values="0,0; -100,200; -200,100; -50,-100; 100,150; 0,0"
         dur="45s"
+        begin="9s"
         repeatCount="indefinite"/>
       <animate
         attributeName="r"
         values="500; 600; 550; 650; 500"
         dur="35s"
+        begin="9s"
         repeatCount="indefinite"/>
     </circle>
     
@@ -118,11 +128,13 @@
         type="translate"
         values="0,0; 120,150; 200,80; 80,-60; -40,100; 0,0"
         dur="28s"
+        begin="9s"
         repeatCount="indefinite"/>
       <animate
         attributeName="r"
         values="250; 320; 280; 350; 250"
         dur="20s"
+        begin="9s"
         repeatCount="indefinite"/>
     </circle>
     
@@ -133,11 +145,13 @@
         type="translate"
         values="0,0; -160,80; -220,-60; -100,140; 60,-80; 0,0"
         dur="33s"
+        begin="9s"
         repeatCount="indefinite"/>
       <animate
         attributeName="r"
         values="280; 360; 320; 400; 280"
         dur="24s"
+        begin="9s"
         repeatCount="indefinite"/>
     </circle>
   </svg>
@@ -148,8 +162,12 @@
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100vw;
     height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     z-index: -1;
     overflow: hidden;
     pointer-events: none;
@@ -168,6 +186,8 @@
   /* Grid pattern */
   .grid-pattern {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-image: 
@@ -179,9 +199,9 @@
     background-position: 
       0 0,
       20px 20px;
-    animation: gridFloat 80s linear infinite;
-    opacity: 1;
+    opacity: 0.7;
     z-index: 2;
+    animation: gridFloat 80s linear 9s infinite;
   }
 
   @keyframes gridFloat {

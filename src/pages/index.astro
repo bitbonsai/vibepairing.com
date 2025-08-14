@@ -40,7 +40,7 @@ import Background from '../components/Background.astro';
 			<!-- Hero Section -->
 			<section class="hero">
 				<div class="container">
-					<h1 class="fade-in">
+					<h1>
 						vibepairing
 					</h1>
 					<p class="subtitle fade-in-delay-1">
@@ -231,27 +231,48 @@ import Background from '../components/Background.astro';
 			var(--accent-lavender) 0%,
 			var(--accent-pink) 100%
 		);
+		background-size: 200% 200%;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
 		text-transform: lowercase;
 		filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+		opacity: 1;
+		transform: none;
+		will-change: auto;
+		position: relative;
+		animation: 
+			subtleGlow 4s ease-in-out 3s infinite,
+			gradientShift 8s ease-in-out 3s infinite;
 	}
 
-	@keyframes gradientFlow {
-		0%, 100% { 
-			background-position: 0% 50%; 
+	@keyframes subtleGlow {
+		0%, 100% {
+			filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3))
+			        drop-shadow(0 0 20px rgba(114, 135, 253, 0));
 		}
-		25% { 
-			background-position: 100% 0%; 
-		}
-		50% { 
-			background-position: 100% 100%; 
-		}
-		75% { 
-			background-position: 0% 100%; 
+		50% {
+			filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3))
+			        drop-shadow(0 0 40px rgba(114, 135, 253, 0.3))
+			        drop-shadow(0 0 60px rgba(234, 118, 203, 0.2));
 		}
 	}
+
+	@keyframes gradientShift {
+		0%, 100% {
+			background-position: 0% 50%;
+		}
+		25% {
+			background-position: 50% 25%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		75% {
+			background-position: 50% 75%;
+		}
+	}
+
 
 	.subtitle {
 		font-size: clamp(1.25rem, 3vw, 1.75rem);
